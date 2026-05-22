@@ -853,7 +853,7 @@ h3 {
 
 @media (max-width: 680px) {
   :root {
-    --expand-sticky-top: 10.25rem;
+    --expand-sticky-top: 13.75rem;
   }
 
   .site-header {
