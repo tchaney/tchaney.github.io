@@ -13,6 +13,7 @@
   --wash: #e8f3f1;
   --rose-wash: #f6eaee;
   --shadow: 0 18px 50px rgba(30, 91, 98, 0.12);
+  --expand-sticky-top: 8.5rem;
 }
 
 * {
@@ -667,6 +668,8 @@ h3 {
 
 .cv-expand-card {
   position: relative;
+  display: grid;
+  align-self: start;
 }
 
 .cv-expand-toggle {
@@ -676,9 +679,15 @@ h3 {
 }
 
 .cv-expand-content {
+  grid-area: 1 / 1;
   position: relative;
   overflow: hidden;
   transition: max-height 180ms ease;
+}
+
+.cv-expand-content > .cv-box-title:first-child,
+.cv-expand-content > h3:first-child {
+  padding-right: 6.75rem;
 }
 
 .cv-expand-toggle:not(:checked) ~ .cv-expand-content {
@@ -701,15 +710,23 @@ h3 {
 }
 
 .expand-control {
+  position: sticky;
+  top: var(--expand-sticky-top);
+  z-index: 4;
+  grid-area: 1 / 1;
+  justify-self: end;
+  align-self: start;
   display: inline-flex;
   align-items: center;
+  width: max-content;
   min-height: 32px;
-  margin-top: 0.9rem;
+  margin: 0 0 0.7rem 1rem;
   padding: 0.25rem 0.75rem;
   color: var(--white);
   background: var(--teal-dark);
   border: 1px solid var(--teal-dark);
   border-radius: 999px;
+  box-shadow: 0 10px 24px rgba(30, 91, 98, 0.14);
   cursor: pointer;
   font-size: 0.9rem;
   font-weight: 700;
@@ -835,6 +852,10 @@ h3 {
 }
 
 @media (max-width: 680px) {
+  :root {
+    --expand-sticky-top: 10.25rem;
+  }
+
   .site-header {
     position: sticky;
     top: 0;
