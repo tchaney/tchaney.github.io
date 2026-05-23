@@ -120,9 +120,9 @@ a:hover {
   align-items: end;
   padding: 8rem 6vw 5rem;
   background-color: #eef2f5;
-  background-image: url("toto-chauplane-banner.jpg");
-  background-size: auto 100%;
-  background-position: left center;
+  background-image: url("chauplane-banner.jpg");
+  background-size: cover;
+  background-position: center 55%;
   background-repeat: no-repeat;
   border-bottom: 1px solid var(--line);
   position: relative;
@@ -133,19 +133,41 @@ a:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(247, 247, 244, 0.06) 0%,
-    rgba(247, 247, 244, 0.2) 27%,
-    rgba(247, 247, 244, 0.86) 49%,
-    rgba(247, 247, 244, 0.7) 100%
-  );
+  background:
+    radial-gradient(
+      ellipse 44rem 25rem at 20% 71%,
+      rgba(247, 247, 244, 0.9) 0%,
+      rgba(247, 247, 244, 0.78) 34%,
+      rgba(247, 247, 244, 0.38) 55%,
+      rgba(247, 247, 244, 0.08) 76%,
+      rgba(247, 247, 244, 0) 100%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(247, 247, 244, 0.2) 0%,
+      rgba(247, 247, 244, 0.08) 27%,
+      rgba(247, 247, 244, 0) 48%
+    );
 }
 
 .hero-content {
   position: relative;
   width: min(760px, 100%);
-  margin-left: clamp(29rem, 38vw, 43rem);
+  margin-left: 0;
+}
+
+.home-portrait {
+  width: min(210px, 52vw);
+  margin: 0 auto 1.2rem;
+}
+
+.home-intro {
+  text-align: center;
+}
+
+.home-intro .lead {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .eyebrow,
@@ -249,7 +271,18 @@ h3 {
   min-height: auto;
   display: grid;
   align-items: center;
-  background: linear-gradient(180deg, #ffffff 0%, var(--wash) 100%);
+  background:
+    linear-gradient(
+      90deg,
+      rgba(245, 251, 249, 0.9) 0%,
+      rgba(245, 251, 249, 0.74) 38%,
+      rgba(245, 251, 249, 0.36) 72%,
+      rgba(245, 251, 249, 0.22) 100%
+    ),
+    url("chauplane-ridge-hero.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   border-bottom: 1px solid var(--line);
 }
 
@@ -887,7 +920,19 @@ h3 {
   }
 
   .hero-home::before {
-    background: rgba(247, 247, 244, 0.74);
+    background:
+      radial-gradient(
+        ellipse 24rem 24rem at 34% 63%,
+        rgba(247, 247, 244, 0.88) 0%,
+        rgba(247, 247, 244, 0.72) 36%,
+        rgba(247, 247, 244, 0.26) 62%,
+        rgba(247, 247, 244, 0) 100%
+      ),
+      linear-gradient(
+        90deg,
+        rgba(247, 247, 244, 0.2) 0%,
+        rgba(247, 247, 244, 0) 70%
+      );
   }
 
   .hero-content {
