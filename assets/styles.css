@@ -927,7 +927,8 @@ h3 {
     min-height: 38px;
     padding: 0.35rem 0.75rem;
     color: var(--white);
-    background: var(--teal-dark);
+    background: #050505;
+    border: 1px solid rgba(255, 255, 255, 0.86);
     border-radius: 999px;
     cursor: pointer;
     font-weight: 700;
@@ -949,7 +950,8 @@ h3 {
   }
 
   .mobile-nav[open] summary {
-    background: var(--claret);
+    background: #050505;
+    border-color: var(--white);
   }
 
   .mobile-nav[open] summary::after {
