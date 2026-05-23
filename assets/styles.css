@@ -433,6 +433,13 @@ h3 {
   gap: 1rem;
 }
 
+.commute-lead {
+  width: 100%;
+  max-width: none;
+  margin: 0 auto 1.35rem;
+  text-align: center;
+}
+
 .media-card {
   background: var(--white);
   border: 1px solid var(--line);
