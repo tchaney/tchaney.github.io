@@ -157,7 +157,9 @@ a:hover {
 }
 
 .home-portrait {
-  width: min(210px, 52vw);
+  width: min(280px, 58vw);
+  aspect-ratio: 1;
+  object-fit: contain;
   margin: 0 auto 1.2rem;
 }
 
