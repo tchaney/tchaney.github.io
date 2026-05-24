@@ -267,6 +267,21 @@ h3 {
   border-color: var(--claret);
 }
 
+.scholar-button {
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.scholar-logo {
+  display: block;
+  width: 21px;
+  height: auto;
+}
+
 .section,
 .page-hero,
 .site-footer {
@@ -1002,7 +1017,7 @@ h3 {
   }
 
   .sticky-actions {
-    top: 0;
+    top: 58px;
   }
 
   .hero-home::before {
